@@ -1,0 +1,12 @@
+<div>
+    <div>{{name}}</div>
+    <div>{{message}}</div>
+    <simple-group>
+        <simple-record name="item.name" ng-repeat="item in items">
+            {{item.content}}
+        </simple-record>
+    </simple-group>
+    <simple-directive show-me="showMsg(message)" color="blue">
+        <span>Click Me</span>
+    </simple-directive>
+</div>
